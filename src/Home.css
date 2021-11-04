@@ -1,0 +1,16 @@
+.searchResults {
+    border: 1px;
+    border-style: solid;
+    height: 150px;
+    width: 600px;
+    overflow: auto;
+    font-size: 11px;
+}
+
+.row {
+    display: flex;
+  }
+  
+  .column {
+    flex: 50%;
+  }

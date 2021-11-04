@@ -16,6 +16,13 @@ app.use(cors());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.json());
 
+app.post('/api/getdata', (require, response) => {
+    const sqlRequest = "SELECT * FROM pt1.users;";
+    db.query(sqlRequest,(err, result) => {
+        response.send(result);
+    })
+})
+
 app.post('/api/getuser', (require, response) => {
     const username = require.body.username;
     const sqlRequest = "SELECT * FROM pt1.users WHERE pt1.users.username = ?;";
@@ -73,7 +80,7 @@ app.get('/api/adv1', (require, response) => {
 })
 
 app.get('/api/adv2', (require, response) => {
-    const sqlAdv2 = `SELECT AVG(sg1.curr_capacity) as curr_cap
+    const sqlAdv2 = `SELECT sg1.course as course, AVG(sg1.curr_capacity) as curr_cap
                     FROM pt1.study_groups sg1 NATURAL JOIN (SELECT ss1.ss_id
                                                             FROM pt1.study_spaces ss1
                                                             WHERE ss1.open >= 7) as t1
