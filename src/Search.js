@@ -18,7 +18,7 @@ class Search extends React.Component {
     }
  
   search() {
-    Axios.post('https://workshop-demo1.uc.r.appspot.com:3002/api/getlocation', {
+    Axios.post('http://workshop-demo1.uc.r.appspot.com/api/getlocation', {
       query_search: this.state.searchQuery,
     }).then((resultE) => {
         this.setState({searchResults: resultE.data});

@@ -140,6 +140,6 @@ app.get('/api/adv2', (require, response) => {
     })
 })
 
-app.listen(3002, () => {
-    console.log("running on port 3002");
+app.listen(8080, () => {
+    console.log("running on port 8080");
 })
