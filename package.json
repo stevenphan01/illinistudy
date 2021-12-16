@@ -27,7 +27,6 @@
     "web-vitals": "^1.1.2"
   },
   "scripts": {
-    "start2": "concurrently \"cd src/utils && npm run devStart\" \"npm run start2\"",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",

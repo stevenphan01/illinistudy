@@ -35,7 +35,7 @@ class Review extends React.Component {
   }
 
   submitReview() {
-    Axios.post('http://workshop-demo1.uc.r.appspot.com/api/insertReview', {
+    Axios.post('https://workshop-demo1.uc.r.appspot.com/api/insertReview', {
       study_spot: this.state.ssid,
       quietness: this.state.q,
       collab: this.state.c,
@@ -89,7 +89,7 @@ class Review extends React.Component {
        // eslint-disable-next-line
     if(this.state.flag == 0) {
       this.setState({flag: 1});
-      Axios.post('http://workshop-demo1.uc.r.appspot.com/api/getreviews', {
+      Axios.post('https://workshop-demo1.uc.r.appspot.com/api/getreviews', {
         ssid: this.state.ssid,
       }).then((resultE) => {
           this.setState({reviewResults: resultE.data});
