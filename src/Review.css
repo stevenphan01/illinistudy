@@ -1,0 +1,71 @@
+body {
+    background-color: aliceblue;
+}
+
+.map-wrapper {
+    height: 100vh;
+    float: right;
+    width: 72%;
+}
+
+.review-wrapper {
+    float: left;
+    width: 28%;
+    height: 100vh;
+    background-color: aliceblue ;
+    opacity: 95%;
+}
+
+.review-text {
+    font-weight: bold;
+    color: black;
+    font-size: 15px;
+}
+
+.review-title {
+    font-size: 36px;
+    color: black;
+    font-weight: bolder;
+    text-decoration: underline;
+}
+
+.review-subheading {
+    font-size: 24px;
+    color: black;
+    font-weight: bold;
+    float: left;
+    padding-left: 5%;
+}
+
+.review-items {
+    font-size: 20px;
+    color: black;
+    font-weight: bold;
+    float: left;
+    text-align: left;
+    padding-left: 10%;
+}
+
+.slider-rows {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.review-row {
+    display: flex;
+    flex-direction: 100%;
+    flex-basis: 100%;
+    flex: 1;
+    justify-content: space-evenly;
+}
+
+.review-col {
+    display: flex;
+    flex: 33%;
+    justify-content: space-evenly;
+}

@@ -1,0 +1,16 @@
+.labelText {
+    font-size: 20px;
+    font-weight: bold;
+    padding-right: 8px;
+}
+
+.buttonLabel {
+    font-size: 20px;
+    font-weight: bold;
+    background-color: black;
+    color: white;
+}
+
+.search-bar-input {
+    padding-right: 2%;
+}
